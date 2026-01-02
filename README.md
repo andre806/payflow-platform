@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💸 PayFlow Platform
 
-## Getting Started
+> Plataforma completa de pagamentos com split automático de comissões para desenvolvedores independentes. 
 
-First, run the development server:
+[![License:  MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 O Que é o PayFlow? 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**PayFlow Platform** é uma solução completa para desenvolvedores independentes que desejam monetizar suas aplicações de forma profissional, gerenciar afiliados e automatizar o split de comissões.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🎯 Problema que Resolve
 
-## Learn More
+Pequenos desenvolvedores enfrentam dificuldades para:
+- ❌ Criar páginas de pagamento profissionais
+- ❌ Gerenciar programas de afiliados
+- ❌ Calcular e transferir comissões manualmente
+- ❌ Integrar gateways de pagamento complexos
 
-To learn more about Next.js, take a look at the following resources:
+### ✨ Solução
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Com o PayFlow, você: 
+- ✅ Cria páginas de pagamento em minutos
+- ✅ Gera cupons de desconto para afiliados automaticamente
+- ✅ Divide comissões automaticamente (você, afiliado, dono do app)
+- ✅ Recebe na sua conta bancária via Stripe Connect
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎬 Como Funciona
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```mermaid
+graph LR
+    A[Desenvolvedor] -->|Cria App| B[PayFlow]
+    B -->|Gera Página| C[Cliente]
+    C -->|Paga com Cupom| D[Stripe]
+    D -->|Split Automático| E[Plataforma]
+    D -->|Split Automático| F[Afiliado]
+    D -->|Split Automático| A
